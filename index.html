@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPRINT 2</title>
+    <link rel="stylesheet" href="sass/custom.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koulen&family=Oswald:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container-fluid shadow-lg gap-3 mb-3">
+      <div class="col-12 border-3 text-center rounded bg-primary text-light">
+        <p class="text-decoration-underline display-4">Aplicacion de gastos</p>
+        <p class="fs-4">ingresa cuanto gasto cada persona</p>
+      </div>
+      <div class="col-6 offset-3 center text-center rounded-pill bg-gradient">
+        <div class="input-group mb-3">
+          <span class="input-group-text">nombre: </span>
+          <input type="text" class="form-control" id="text" />
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text">monto:$ </span>
+          <input type="number" class="form-control" id="numb" />
+        </div>
+        <script src="app.js"></script>
+        <button onclick="wiev()" type="submit" class="btn btn-danger">
+          ENVIAR DATOS
+        </button>
+      </div>
+      <div class="col-6 offset-3">
+        <ul class="list-group">
+          <li class="list-group-item">pepe: $323</li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
