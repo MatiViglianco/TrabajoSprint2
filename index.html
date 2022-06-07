@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPRINT 2</title>
-    <link rel="stylesheet" href="sass/custom.css" />
+    <link rel="stylesheet" href="custom.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +15,7 @@
   </head>
   <body>
     <main class="container-fluid shadow-lg gap-3 mb-3">
-      <div class="col-12 border-3 text-center rounded bg-primary text-light">
+      <div class="col-12 border-3 text-center rounded text-bg-dark text-light">
         <p class="text-decoration-underline display-4">Aplicacion de gastos</p>
         <p class="fs-4">ingresa cuanto gasto cada persona</p>
       </div>
@@ -28,16 +28,28 @@
           <span class="input-group-text">monto:$ </span>
           <input type="number" class="form-control" id="numb" />
         </div>
-        <script src="app.js"></script>
-        <button onclick="wiev()" type="submit" class="btn btn-danger">
+
+        <button onclick="wiew()" type="submit" class="btn btn-danger">
           ENVIAR DATOS
         </button>
       </div>
-      <div class="col-6 offset-3">
-        <ul class="list-group">
-          <li class="list-group-item">pepe: $323</li>
-        </ul>
+      <div class="col-6 offset-3 p-3">
+        <ul class="list-group"></ul>
+      </div>
+      <div class="col-6 offset-3 p-3 text-center">
+        <table class="table table-dark">
+          <tbody>
+            <tr class="table-active"></tr>
+            <tr>
+              <td class="table-active" id="totalPay">TOTAL A PAGAR: $0</td>
+              <td class="table-active" id="totalDiv">
+                A CADA UNO LE TOCA PAGAR: $0
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </main>
   </body>
+  <script src="app.js"></script>
 </html>
